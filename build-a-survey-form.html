@@ -1,0 +1,131 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+       <fieldset>
+       <label id="name-label" for="name"> Name <input id="name" name="name" type="text" required placeholder="Enter your name" /></label>
+        <label id="email-label" for="email"> Email <input id="email" name="email" type="email" required placeholder="Enter your email" /></label>
+         <label id="number-label" for="number"> Age (optional) <input id="number" name="age" type="number" min="13" max="120" placeholder="Enter your age" /></label>
+          </fieldset>
+           <fieldset>
+         <label for="dropdown">What type of classes are you interested in?
+        <select id="dropdown" name="options">
+           <option value="">(select one)</option>
+            <option value="">Pole dancing</option>
+            <option value="">Aerial Hoop</option>
+        </select>
+        </label>
+         </fieldset>
+          <fieldset>
+            <label>Are you interested in weekday morning classes?</label>
+              <label for="yes"><input id="yes" type="radio" name="recommend" class="inline" value="1" /> Yes </label>
+        <label for="no"><input id="no" type="radio" name="recommend" class="inline" value="2" /> No </label>
+          </fieldset>
+
+          <fieldset>
+          <label>What would you like to improve?</label>
+          <label for="skills" name="tskills">
+          <input value="1" id="skills" type="checkbox" name="skills" class="inline" /> Flexibility </label>
+          <label for="skills" name="skills">
+          <input value="2" id="skills" type="checkbox" name="skills" class="inline" /> Body strength </label>
+          <label for="skills" name="skills">
+          <input value="3" id="skills" type="checkbox" name="skills" class="inline" /> Musicality </label>
+   
+          
+          <label for="other">Other:
+          <textarea id="other" name="other" rows="3" cols="30" placeholder="I just want to lose weight..."></textarea>
+        </label>
+      </fieldset>
+       <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #446a70;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 2rem;
+  border-bottom: 3px solid #f5c390;
+  background-color: #f5c390
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  color: #41473d
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #d8e6e8;
+  border: 1px solid #d8e6e8;
+  color: #41473d;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #a6122b;
+  border-color: white;
+  min-width: 300px;
+  color: white;
+}
+
+
+** end of undefined **
+
